@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'primaryHijau': '#3dd909',
+        'secondaryKuning': '#b5d714',
+        'krem': '#f5d44f',
+        'hijauGelap': '#44852f'
+      },
+    },
   },
   plugins: [],
 }
