@@ -4,7 +4,7 @@ import Footer from '../component/Footer'
 
 const Beranda = () => {
   return (
-    <div className='flex flex-col justify-between w-full h-screen'>
+    <div className='w-full h-full'>
         <Navbar />
 
 
