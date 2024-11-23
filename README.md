@@ -1,1 +1,1 @@
-Selamat bekerja kontol.:)
+Selamat bekerja
