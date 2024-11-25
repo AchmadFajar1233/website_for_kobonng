@@ -1,15 +1,16 @@
 import React from 'react'
 import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
+import Main from '../component/Main'
 
 const Beranda = () => {
   return (
-    <div className='w-full h-full'>
+    <>
         <Navbar />
-
+        <Main />
 
         <Footer />
-    </div>
+    </>
   )
 }
 

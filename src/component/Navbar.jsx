@@ -27,8 +27,8 @@ const Navbar = () => {
   }
   return (
     <>
-    <header className='w-screen border-b relative bg-krem mb-10'>
-        <nav className='px-6 py-12 flex justify-between items-center lg:px-16'>
+    <header className='w-screen relative bg-krem'>
+        <nav className='px-12 py-12 flex justify-between items-center lg:px-16'>
             <div id='logo' className='flex gap-4 justify-center items-center'>
                 <img src={logo} alt="" className='w-16 h-16'/>
                 <div>
@@ -57,16 +57,6 @@ const Navbar = () => {
                 </ul>
             </div>
         </nav>
-        <div className='w-full h-[20rem] relative md:h-[30rem]'>
-          <div className='absolute right-0 bottom-0 top-0 left-0 bg-[#3d3d3d81] z-10 flex flex-col justify-center items-center'>
-            <h1 className='text-slate-50 uppercase font-semibold text-4xl lg:text-5xl'>Selamat Datang</h1>
-            <p className='text-slate-50 mb-4 lg:text-lg'>di website resmi:</p>
-            <p className='font-semibold text-slate-50 md:text-lg'>PPNH Assalafy</p>
-            <p className='uppercase font-semibold text-slate-50 text-xl lg:text-2xl'>Pondok Pesantren Nurul Hikmah</p>
-            <p className='uppercase font-semibold text-slate-50 text-xl lg:text-2xl'>Assalafy</p>
-          </div>
-            <img src={backroundHeader} alt=""  className='w-full h-full absolute top-0 bottom-0 left-0 right-0 md:object-cover md:object-center'/>
-        </div>
     </header>
     </>
   )
