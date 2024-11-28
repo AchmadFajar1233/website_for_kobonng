@@ -1,5 +1,5 @@
 import React from 'react'
-import {HeaderMain, BodyMain} from './main/index'
+import {HeaderMain, BodyMain, Commentar, Article} from './main/index'
 import {backgroundHeader1, backgroundHeader2, backgroundHeader3, backgroundHeader4, backgroundHeader5, backgroundHeader6, backgroundHeader7, backgroundHeader8, backgroundHeader9, backgroundHeader10, backgroundHeader11 } from '../assets/index'
 
 const Main = () => {
@@ -22,6 +22,8 @@ const Main = () => {
     <main>
     <HeaderMain data={data} />
     <BodyMain image={image} />
+    <Commentar />
+    <Article />
     </main>
   )
 }

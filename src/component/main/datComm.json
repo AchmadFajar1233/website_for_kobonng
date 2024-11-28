@@ -1,0 +1,11 @@
+[
+    {"name":"John Doe",
+    "commentar":"Pesantren nya bagus, lingkunganya sangat asri",
+    "date":"04-02-2023"},
+    {"name":"Steve Jobs",
+    "commentar":"Recomended Banget buat anak mondok disini",
+    "date":"02-06-2023"},
+    {"name":"Elon Musk",
+    "commentar":"pengajaran sangat inovatif, worth banget",
+    "date":"04-11-2024"}
+]

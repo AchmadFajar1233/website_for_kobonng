@@ -8,7 +8,6 @@ const Beranda = () => {
     <>
         <Navbar />
         <Main />
-
         <Footer />
     </>
   )

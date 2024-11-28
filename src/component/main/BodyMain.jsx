@@ -18,7 +18,7 @@ const BodyMain = ({image}) => {
 
   return (
     <>
-    <section className='w-full px-10 grid grid-rows-3 grid-cols-1 gap-4 lg:grid-cols-2 lg:grid-rows-2'>
+    <section className='w-full lg:px-10 px-5 grid grid-rows-3 grid-cols-1 gap-4 lg:grid-cols-2 lg:grid-rows-2'>
       <div style={{backgroundImage: `url(${image[mainSlide].url})`}} className='lg:row-span-2 rounded-lg shadow-lg relative bg-cover bg-[center] flex justify-between items-center px-4'>
             <div className='text-white bg-black/50 cursor-pointer p-4 rounded-lg'>
               <BsChevronCompactLeft size={30} onClick={prevMainSlide} />
