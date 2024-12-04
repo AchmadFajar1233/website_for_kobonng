@@ -31,9 +31,9 @@ const Article = () => {
         <h1 className='text-center text-xl'>Artikel Pilihan</h1>
         <hr className='my-4'/>
         <div className='flex flex-col justify-center gap-4 md:flex-row md:grid md:grid-cols-2 md:grid-rows-2'>
-            {datas.map((data) =>{
+            {datas.map((data, index) =>{
                 return(
-                    <div className='cursor-pointer lg:h-[35rem] h-[25rem] border rounded-md overflow-hidden shadow-lg flex flex-col'>
+                    <div key={index} className='cursor-pointer lg:h-[35rem] h-[25rem] border rounded-md overflow-hidden shadow-lg flex flex-col'>
                         <div className='w-full h-[50%] border-b-2 overflow-hidden'>
                             <img src={data.image} alt="" className='object-cover object-bottom w-full h-full' />
                         </div>

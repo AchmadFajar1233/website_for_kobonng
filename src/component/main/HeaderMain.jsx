@@ -17,7 +17,7 @@ const HeaderMain = ({data}) => {
       }
   return (
     <>
-    <section className='max-w-[screen] w-full h-[30rem] lg:h-[35rem] relative'>
+    <section className='max-w-[screen] w-full h-[30rem] lg:h-[35rem] relative mt-[6rem]'>
       <div style={{backgroundImage: `url(${data[slide].url})`}} className='w-full h-full bg-cover bg-center'>
       </div>
       <div className='absolute top-0 w-full h-full flex justify-between items-center'>
