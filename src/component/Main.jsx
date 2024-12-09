@@ -22,8 +22,8 @@ const Main = () => {
     <main>
     <HeaderMain data={data} />
     <BodyMain image={image} />
-    <Commentar />
     <Article />
+    <Commentar />
     </main>
   )
 }

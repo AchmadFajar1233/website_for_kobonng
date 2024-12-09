@@ -4,20 +4,18 @@ import {BsChevronCompactLeft} from 'react-icons/bs'
 import {BsChevronCompactRight} from 'react-icons/bs'
 
 const BodyMain = ({image}) => {
-    const [mainSlide, setMainSLide] = useState(0)
-    const prevMainSlide = () => {
-        const isFirtsSlide = mainSlide === 0
-        const newIndex = isFirtsSlide ? image.length -1 : mainSlide -1
-        setMainSLide(newIndex)
-      }
-      const nextMainSlide = () => {
-        const isLastSLide = mainSlide === image.length -1
-        const newIndex = isLastSLide ? 0 : mainSlide + 1
-        setMainSLide(newIndex)
-      }
-
+  const [mainSlide, setMainSLide] = useState(0)
+  const prevMainSlide = () => {
+      const isFirtsSlide = mainSlide === 0
+      const newIndex = isFirtsSlide ? image.length -1 : mainSlide -1
+      setMainSLide(newIndex)
+    }
+    const nextMainSlide = () => {
+      const isLastSLide = mainSlide === image.length -1
+      const newIndex = isLastSLide ? 0 : mainSlide + 1
+      setMainSLide(newIndex)
+    }
   return (
-    <>
     <section className='w-full lg:px-10 px-5 grid grid-rows-3 grid-cols-1 gap-4 lg:grid-cols-2 lg:grid-rows-2'>
       <div style={{backgroundImage: `url(${image[mainSlide].url})`}} className='lg:row-span-2 rounded-lg shadow-lg relative bg-cover bg-[center] flex justify-between items-center px-4'>
             <div className='text-white bg-black/50 cursor-pointer p-4 rounded-lg'>
@@ -43,9 +41,10 @@ const BodyMain = ({image}) => {
              <p className='text-krem font-semibold lg:text-lg'>4. Pengenalan Teknologi</p>
             </div>
       </div>
-    </section>    
-    </>
+    </section> 
   )
 }
+
+
 
 export default BodyMain

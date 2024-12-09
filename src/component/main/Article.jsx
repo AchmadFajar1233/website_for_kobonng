@@ -27,25 +27,23 @@ const Article = () => {
     }
 ]  
   return (
-    <section className='w-full p-6 lg:px-10'>
+    <section className='w-full p-6 lg:px-10 my-[10rem] bg-slate-200'>
         <h1 className='text-center text-xl'>Artikel Pilihan</h1>
         <hr className='my-4'/>
-        <div className='flex flex-col justify-center gap-4 md:flex-row md:grid md:grid-cols-2 md:grid-rows-2'>
-            {datas.map((data, index) =>{
-                return(
-                    <div key={index} className='cursor-pointer lg:h-[35rem] h-[25rem] border rounded-md overflow-hidden shadow-lg flex flex-col'>
-                        <div className='w-full h-[50%] border-b-2 overflow-hidden'>
-                            <img src={data.image} alt="" className='object-cover object-bottom w-full h-full' />
-                        </div>
-                        <div className='w-full p-8 flex-col flex justify-between h-[40%]'>
-                            <div>
-                                <h1 className='text-xl lg:text-3xl lg:mb-1'>{data.title}</h1>
-                                <span className='text-sm'>{data.date}</span>
-                            </div>
-                            <a href="#" className='hover:text-blue-800'>Baca Selengkapnya...</a>
-                        </div> 
-                    </div>
-                )
+        <div className='w-full grid grid-cols-2 grid-rows-2 h-[35rem] sm:h-[45rem] sm:grid-cols-3 gap-4'>
+            {datas.map((data, index) => {
+            return(
+                <div key={index} className='border border-slate-400 flex flex-col overflow-hidden rounded-md shadow-lg gap-4'>
+                <div className='w-full h-[50%]'>
+                    <img src={data.image}  alt="contoh" className='w-full h-full object-cover'/>
+                </div>
+                <div className='px-4 flex flex-col'>
+                    <h3 className='font-semibold truncate text-[#2b501e]'>{data.title}</h3>
+                    <span className='text-xs mb-3 text-[#2b501e]'>{ data.date}</span>
+                    <a href="#" className='hover:text-hijauGelap text-sm text-[#2b501e]'>Baca Selengkapnya...</a>
+                </div>
+            </div>
+            )
             })}
         </div>
 
